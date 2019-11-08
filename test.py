@@ -1,7 +1,10 @@
-import keras as ks
-
-while(1):
-    y = input()
-    x = eval(input())
-    print(type(y),type(x))
-    print(x**2)
+import matplotlib.pyplot as plt
+import matplotlib.image as mpimg
+import numpy as np
+import cv2
+# reading in an image
+image = mpimg.imread('whiteCarLaneSwitch.jpg')
+# printing out some stats and plotting the image
+print('This image is:', type(image), 'with dimensions:', image.shape)
+plt.imshow(image)
+plt.show()
